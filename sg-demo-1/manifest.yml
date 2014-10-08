@@ -1,0 +1,10 @@
+---
+applications:
+- name: sg-pcf-demo
+  memory: 512M
+  instances: 1
+  host: sg-pcf-demo
+  path: ./target/sg-pcf-demo.war
+  services:
+  - sg-pcf-demo
+

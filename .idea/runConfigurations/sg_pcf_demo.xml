@@ -1,0 +1,38 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="sg-pcf-demo" type="cloudfoundry-deploy" factoryName="CloudFoundry Deployment" singleton="true" server-name="PWS CloudFoundry">
+    <deployment type="artifact" name="sg-demo-1:war">
+      <settings>
+        <option name="appSettings">
+          <CFAppSettingsImpl>
+            <option name="instances" value="1" />
+            <option name="memory" value="512" />
+          </CFAppSettingsImpl>
+        </option>
+        <option name="appSettingsRange">
+          <CFAppSettingsRangeImpl>
+            <option name="memoryChoices">
+              <array>
+                <option value="64" />
+                <option value="128" />
+                <option value="256" />
+                <option value="512" />
+                <option value="1024" />
+                <option value="2048" />
+              </array>
+            </option>
+          </CFAppSettingsRangeImpl>
+        </option>
+        <option name="domain" value="sg-pcf-demo.cfapps.io" />
+        <option name="infra" value="ap-aws" />
+        <option name="type" value="Java/Web" />
+      </settings>
+    </deployment>
+    <RunnerSettings RunnerId="DeployToServer" />
+    <ConfigurationWrapper RunnerId="DeployToServer" />
+    <method>
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="sg-demo-1:war" />
+      </option>
+    </method>
+  </configuration>
+</component>

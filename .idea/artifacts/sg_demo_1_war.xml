@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sg-demo-1:war">
+    <output-path>$PROJECT_DIR$/sg-demo-1/target</output-path>
+    <root id="archive" name="sg-pcf-demo.war">
+      <element id="artifact" artifact-name="sg-demo-1:war exploded" />
+    </root>
+  </artifact>
+</component>
